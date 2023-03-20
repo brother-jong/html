@@ -10,6 +10,11 @@
 <body>
     <h1>2줄 3칸 기본 표 만들기</h1>
     <table border="1" width="50%">
+        <caption>
+            <strong>기본 테이블 입니다.</strong>
+            <br>
+            2줄 3칸짜리 표입니다.
+        </caption>
         <!--1번 줄-->
         <tr>
             <td>1</td>
@@ -27,6 +32,11 @@
     <hr>
 
     <h1>표에 제목 셀 만들기</h1>
+    <figure>
+        <figcaption>
+            표에 제목 셀 만들기 입니다.
+        </figcaption>
+    </figure>
     <table border="1" width="100%">
         <tr>
             <th>학과</th>
@@ -62,6 +72,98 @@
         <td>10</td>
         <td>11</td>
     </tr>
+    </table>
+    <hr>
+
+    <!--thead, tbody, tfooter-->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1교시</th>
+                <td>.</td>
+                <td rowspan="2" span style="background-color: rgb(219, 156, 253);">S/W프로그래밍사고 국552</td>
+                <td rowspan="2" span style="background-color: rgb(219, 156, 253);">S/W프로그래밍사고 국552</td>
+                <td rowspan="2" span style="background-color: rgb(156, 184, 255);">공학적 글쓰기 종212</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <th>2교시</th>
+                <td rowspan="2" span style="background-color: rgb(255, 255, 187);">컴퓨터공학개론 국552</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <th>3교시</th>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td rowspan="2" span style="background-color: rgb(255, 197, 197);">SJP I(대학일본어 I) 국217</td>
+            </tr>
+            <tr>
+                <th>4교시</th>
+                <td>.</td>
+                <td>.</td>
+                <td span style="background-color: rgb(255, 255, 187);">컴퓨터공학개론 국552</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <th>5교시</th>
+                <td rowspan="2" span style="background-color: rgb(184, 255, 190);">웹제작 국552</td>
+                <td rowspan="2" span style="background-color: rgb(166, 255, 240);">글로벌직업탐구 국425</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <th>6교시</th>
+                <td>.</td>
+                <td span style="background-color: rgb(200, 200, 200);">대학생활과 진로탐색I 국550</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <th>7교시</th>
+                <td>.</td>
+                <td>.</td>
+                <td rowspan="2" span style="background-color: rgb(255, 197, 197);">SJP I(대학일본어 I)</td>
+                <td>.</td>
+                <td rowspan="2" span style="background-color: rgb(184, 255, 190);">웹제작 국552</td>
+            </tr>
+            <tr>
+                <th>8교시</th>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <th>9교시</th>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td rowspan="2" span style="background-color: rgb(255, 138, 236);">취업전략과 창업시도(사이버) 사325</td>
+            </tr>
+            <tr>
+                <th>10교시</th>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">1교시 수업 시작은 9시 30분입니다.</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
