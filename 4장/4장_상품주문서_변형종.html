@@ -59,11 +59,11 @@
                     <ul>
                         <li>
                             <label for="user_name" class="title">이름</label>
-                            <input type="text" name="user_name" id="name" placeholder="이름을 입력하세요." autofocus required>
+                            <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요." autofocus required>
                         </li>
                         <li>
                             <label for="user_tell" class="title">연락처</label>
-                            <input type="tel" name="tell" id="user_tell" maxlength="11" placeholder="연락처를 입력하세요." required>
+                            <input type="tel" name="user_tel" id="user_tel" maxlength="11" placeholder="연락처를 입력하세요." required>
                         </li>
                     </ul>
 
@@ -74,13 +74,16 @@
                     <legend>배송지 정보</legend>
                     <ul>
                         <li>
-                            <label for="name" class="title">이름</label><input type="text" id="name" placeholder="여백없이 입력" required>
+                            <label for="user_name" class="title">이름</label>
+							<input type="text" id="name" placeholder="여백없이 입력" required>
                         </li>
                         <li>
-                            <label for="연락처" class="title">연락처</label><input type="tel" id="phone" placeholder="연락가능한 번호" required>
+                            <label for="user_contact" class="title">연락처</label>
+							<input type="tel" id="phone" placeholder="연락가능한 번호" required>
                         </li>
                         <li>
-                            <label for="user_memo" class="title">메모</label><textarea name="user_memo" id="user_memo" cols="30" rows="2" placeholder="메모 입력하세요."></textarea>
+                            <label for="user_memo" class="title">메모</label>
+							<textarea name="user_memo" id="user_memo" cols="30" rows="2" placeholder="메모 입력하세요."></textarea>
                         </li>
                     </ul>
                 </fieldset>
@@ -90,13 +93,13 @@
                     <legend>주문 정보</legend>
                     <ul>
                         <li>
-                            <label><input type="checkbox" name="gwa" id="user_gwa" value="gwa">과테말라 안티구아 (100g) <input type="number" name="gwa" id="user_gwa" value="1" min="1" max="100">개</label>
+                            <label><input type="checkbox" name="coffee" value="과테말라">과테말라 안티구아 (100g) <input type="number" name="gwa" id="user_gwa" value="1" min="1" max="100">개</label>
                         </li>
                         <li>
-                            <label><input type="checkbox" name="ind" id="user_ind" value="ind">인도네시아 만델링 (100g) <input type="number" name="ind" id="user_ind"value="1" min="1" max="100">개</label>
+                            <label><input type="checkbox" name="coffee2" value="만델링">인도네시아 만델링 (100g) <input type="number" name="ind" id="user_ind"value="1" min="1" max="100">개</label>
                         </li>
                         <li>
-                            <label><input type="checkbox" name="jeju" id="user_jeju" value="jeju">탐라는도다(블렌딩) (100g) <input type="number" name="jeju" id="user_jeju"value="1" min="1" max="100">개</label>
+                            <label><input type="checkbox" name="coffee3" value="블렌딩">탐라는도다(블렌딩) (100g) <input type="number" name="jeju" id="user_jeju"value="1" min="1" max="100">개</label>
                         </li>
                     </ul>
 
