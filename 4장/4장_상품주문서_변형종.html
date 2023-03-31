@@ -59,11 +59,11 @@
                     <ul>
                         <li>
                             <label for="user_name" class="title">이름</label>
-                            <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요." autofocus required>
+                            <input type="text" name="user_name" id="name" placeholder="이름을 입력하세요." autofocus required>
                         </li>
                         <li>
                             <label for="user_tell" class="title">연락처</label>
-                            <input type="tell" name="user_tell" id="user_tell" maxlength="11" placeholder="연락처를 입력하세요." required>
+                            <input type="tel" name="tell" id="user_tell" maxlength="11" placeholder="연락처를 입력하세요." required>
                         </li>
                     </ul>
 
@@ -90,13 +90,13 @@
                     <legend>주문 정보</legend>
                     <ul>
                         <li>
-                            <label><input type="checkbox" value="gwa">과테말라 안티구아 (100g) <input type="number" value="1" min="1" max="100">개</label>
+                            <label><input type="checkbox" name="gwa" id="user_gwa" value="gwa">과테말라 안티구아 (100g) <input type="number" name="gwa" id="user_gwa" value="1" min="1" max="100">개</label>
                         </li>
                         <li>
-                            <label><input type="checkbox" value="ind">인도네시아 만델링 (100g) <input type="number" value="1" min="1" max="100">개</label>
+                            <label><input type="checkbox" name="ind" id="user_ind" value="ind">인도네시아 만델링 (100g) <input type="number" name="ind" id="user_ind"value="1" min="1" max="100">개</label>
                         </li>
                         <li>
-                            <label><input type="checkbox" value="jeju">탐라는도다(블렌딩) (100g) <input type="number" value="1" min="1" max="100">개</label>
+                            <label><input type="checkbox" name="jeju" id="user_jeju" value="jeju">탐라는도다(블렌딩) (100g) <input type="number" name="jeju" id="user_jeju"value="1" min="1" max="100">개</label>
                         </li>
                     </ul>
 
@@ -104,9 +104,8 @@
 				
                 <!-- 버튼 구역-->
 				<div class="centered">
-					<legend></legend>
-                <input type="submit" value="주문하기">
-                <input type="reset" value="다시 입력">
+                	<input type="submit" value="주문하기">
+               	 <input type="reset" value="다시 입력">
 				</div>
 			</form>
 		</div>
