@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>변형종</title>
+
+        <link rel="stylesheet" type="text/css" href="202395018.css">
+    </head>
+    <body>
+        <header>
+            <!--이미지 영역-->
+            <div>
+                <img src="img/main.jpg">
+            </div>
+            <!--제목 영역-->
+            <div>
+                <h1>지금도 그렇고 미래도 소프트웨어 세상입니다.</h1>
+                <p>4차 산업혁명을 선도할 개발 인재를 양성합니다.</p>
+            </div>
+        </header>
+
+        <nav>
+            <a href="Introduction.html">학과 소개</a> ㅣ
+            <a href="history.html">학과 연혁</a> ㅣ
+            <a href="join.html">회원 가입</a>
+        </nav>
+
+        <section>
+            <h2>회원 가입</h2>
+            <article>
+                <form name="mtForm" method="get" action="welcome.html">
+                    <!--개인정보 영역-->
+                    <fieldset>
+                        <legend>개인 정보 (필수입력)</legend>
+                        <ul>
+                            <li>
+                                <label for="user_id" class="title">아이디</label>
+                                <input type="id" name="user_id" id="user_id" required>
+                            </li>
+                            <li>
+                                <label for="user_pw" class="title">비밀번호</label>
+                                <input type="password" name="user_pw" id="user_pw" required>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <!--추가정보 영역-->
+                    <fieldset>
+                        <legend>추가 정보 (선택사항)</legend>
+                        <ul
+                            <li>
+                                <label for="user_tell" class="title">전화번호</label>
+                                <input type="tel" name="user_tel" id="user_tel" maxlength="11" placeholder="연락처를 입력하세요." required>
+                            </li>
+                            <li>
+                                <label class="title">성별</label>
+                                <input type="radio" name="sex" id="sex_m" value="m">
+                                <label for="sex_m">남</label>
+                                <input type="radio" name="sex" id="sex_w" value="w">
+                                <label for="sex_w">여</label>
+                            </li>
+                            <li>
+                                <label class="title">괸심분야</label>
+                                <input type="checkbox" name="ck_c" id="ck_c" value="C">
+                                <label for="ck_c">C</label>
+
+                                <input type="checkbox" name="ck_python" id="ck_python" value="python">
+                                <label for="ck_python">파이썬</label>
+
+                                <input type="checkbox" name="ck_r" id="ck_r" value="R">
+                                <label for="ck_r">R</label>
+
+                                <input type="checkbox" name="ck_app" id="ck_app" value="app">
+                                <label for="ck_app">앱엔벤터</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <!--버튼 영역-->
+                    <div>
+                        <input type="submit" value="가입하기">
+                        <input type="reset" value="다시작성">
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <p>컴퓨터공학부 202395018 변형종</p>
+        </footer>
+    </body>
+</html>
